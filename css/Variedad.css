@@ -24,7 +24,7 @@ header
     border: #4499;
 }
 
-#cabecera
+.cabecera
 {
     background: #4499;
     box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.5);
@@ -35,7 +35,7 @@ header
 
 }
 
-#cabecera h1
+.cabecera__h1
 {
     color: white;
     display: inline;
@@ -50,12 +50,12 @@ header
     text-align: start;
 }
 
-#post h1
+.post h1
 {
     font-family: "Montserrat", cursive;
 }
 
-#post
+.post
 {
     background: white;
     color: black;
