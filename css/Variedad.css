@@ -19,6 +19,11 @@ header
     padding: 0;
 }
 
+.sidebar
+{
+    text-align: start;
+}
+
 #container
 {
     border: #4499;
