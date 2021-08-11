@@ -111,7 +111,7 @@ header
 
 .sidebar ul li .tooltip
 {
-    position: absolute;
+    position: relative;
     left: 122px;
     top: 0;
     transform: translate(-50%, -50%);
@@ -138,6 +138,15 @@ header
     transition: all 0.5s ease;
     opacity: 1;
     top: 50px;
+}
+
+.sidebar.active ul li:hover .tooltip
+{
+    transition: all 0.5s ease;
+    z-index: 600;
+    opacity: 1;
+    top: 50px;
+    position: absolute;
 }
 
 .sidebar ul li input
@@ -224,6 +233,12 @@ header
     position: relative;
     padding: 10px 6px;
     height: 60px;
+    background: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active .profile_content .profile
+{
     background: #1d1b31;
 }
 
@@ -278,11 +293,14 @@ header
     font-size: 20px;
     border-radius: 12px;
     text-align: center;
+    transition: all 0.4s ease;
+    background: #1d1b31;
 }
 
 .sidebar.active .profile #log_out
 {
     left: 88%;
+    background: none;
 }
 
 .home_content
@@ -310,18 +328,20 @@ header
 
 #container
 {
-    position: relative;
     height: 100%;
     border: #4499;
-    width: calc(100% - 78px);
-    transition: all 0.5s ease;
+    width: calc(100% - 0px);
     left: 78px;
+    opacity: 1;
 }
 
 .sidebar.active ~ #container
 {
+    position: relative;
     width: calc(100% - 240px);
     left: 240px;
+    transition: all 0.5s ease;
+    opacity: 1;
 }
 
 
@@ -333,7 +353,6 @@ header
     font-weight: bold;
     margin: 0;
     padding: 0.5em;
-
 }
 
 .cabecera__h1
