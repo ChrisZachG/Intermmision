@@ -70,6 +70,62 @@ header
     transform: translate(-50%);
 }
 
+.sidebar ul
+{
+    margin-top: 20px;
+}
+
+.sidebar ul li
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 50px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul li input
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.sidebar ul li a
+{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.sidebar ul li a:hover
+{
+    color: #11101d;
+    background: #fff;
+}
+
+.sidebar ul li a i
+{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
 #container
 {
     border: #4499;
